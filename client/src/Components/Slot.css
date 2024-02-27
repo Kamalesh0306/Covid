@@ -1,0 +1,103 @@
+/* Slot.css */
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search bar styles */
+.search {
+  margin-bottom: 20px;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.search button[type="submit"] {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+}
+
+/* Center card styles */
+.center-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-card h2 {
+  margin-bottom: 10px;
+}
+
+.center-card p {
+  margin-bottom: 5px;
+}
+
+.center-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.center-card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.center-card button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer styles */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+}

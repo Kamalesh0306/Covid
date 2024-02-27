@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.faq-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .faq-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .question {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .answer {
+    margin-top: 10px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .faq-item.active {
+    background-color: #f4f4f4;
+  }
+  
+  .faq-item.active .answer {
+    display: block;
+  }
+
+  .fancy2 {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url("data:image/svg+xml,%3Csvg width='2250' height='900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='%2300A080' d='M0 0h2255v899H0z'/%3E%3Ccircle cx='366' cy='207' r='366' fill='%2300FDCF'/%3E%3Ccircle cx='1777.5' cy='318.5' r='477.5' fill='%2300FDCF'/%3E%3Ccircle cx='1215' cy='737' r='366' fill='%23008060'/%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      padding: 0 100px;
+      font-size: 60px;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+  
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
