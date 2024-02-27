@@ -11,10 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "kamalSan@0306",
-  database: "covid",
+  host: "bfr6bt9d8nfwnj6zozog-mysql.services.clever-cloud.com",
+  user: "uwbioxxkhaqcgpto",
+  password: "mwscpUqgEddRVxeXPJou",
+  database: "bfr6bt9d8nfwnj6zozog",
 });
 
 // db.connect((err) => {
@@ -91,6 +91,8 @@ app.put("/vaccine/:id", (req, res) => {
     return res.json(data);
   });
 });
+
+
 app.post("/", async (req, res) => {
   const { email, password } = req.body;
 

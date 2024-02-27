@@ -41,7 +41,7 @@ const Signup = () => {
 
     return (
         <div className="login">
-            <h1>ASH LIBRARY</h1>
+            <h1>Covid Vaccine Slot </h1>
             <br></br>
             <br></br>
             <br></br>
@@ -58,7 +58,7 @@ const Signup = () => {
             <form action="POST">
                 <input type="email" onChange={(e) => { setEmail(e.target.value) }} placeholder="Email"  />
                 <input type="password" onChange={(e) => { setPassword(e.target.value) }} placeholder="Password" />
-                <input type="submit" onClick={submit} />
+                <input type="submit" onClick={submit} style={{'background':"#0056b3",'color':"white",'align-items':'center','justifyContent':'center'}} />
 
             </form>
 
@@ -66,7 +66,7 @@ const Signup = () => {
             <p>OR</p>
             <br />
 
-            <Link to="/">Login Page</Link>
+            <Link to="/" style={{'color':"black"}}>Login Page</Link>
             </div>
             <br></br>
             <br></br>
