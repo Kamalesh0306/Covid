@@ -17,7 +17,7 @@ function Login(){
 
         try{
 
-            await axios.post("http://localhost:8800/",{
+            await axios.post(`https://covid-jy70.onrender.com/`,{
                 email,password
             })
             .then(res=>{

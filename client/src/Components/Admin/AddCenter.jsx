@@ -20,7 +20,7 @@ const AddCenter = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/vaccine", center);
+      await axios.post(`https://covid-jy70.onrender.com/vaccine`, center);
       navigate("/center");
     } catch (err) {
       console.log(err);

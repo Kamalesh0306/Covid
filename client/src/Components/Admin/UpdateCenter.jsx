@@ -27,7 +27,7 @@ const UpdateCenter = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:8800/vaccine/${vaccineId}`, book);
+      await axios.put(`https://covid-jy70.onrender.com/vaccine/${vaccineId}`, book);
       navigate("/center");
     } catch (err) {
       console.log(err);

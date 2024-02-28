@@ -10,7 +10,7 @@ const Centers = () => {
     useEffect(() => {
         const fetchCenters = async () => {
             try {
-                const res = await axios.get("http://localhost:8800/vaccine");
+                const res = await axios.get(`https://covid-jy70.onrender.com/vaccine`);
                 setCenters(res.data);
             } catch (err) {
                 console.log(err);
@@ -21,7 +21,7 @@ const Centers = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:8800/vaccine/${id}`);
+            await axios.delete(`https://covid-jy70.onrender.com/vaccine/${id}`);
             setCenters(centers.filter(center => center.id !== id));
         } catch (err) {
             console.log(err);
@@ -46,7 +46,7 @@ const Centers = () => {
                         <h2 className="center-name">Center: {center.center}</h2>
                         <p className="center-info"><strong>Address: </strong>{center.address}</p>
                         <p className="center-info"><strong>Slots Available: </strong>{center.slots}</p>
-                        <p className="center-info"><strong>Issue Date: </strong>{center.date}</p>
+                        <p className="center-info"><strong>Date: </strong>{center.date}</p>
                         <div className="button-group">
                             <button className="delete-btn" onClick={() => handleDelete(center.id)}>Delete</button>
                             <Link to={`/update/${center.id}`} className="update-btn">Update</Link>
